@@ -35,7 +35,7 @@ const  Current=()=> {
             </LinearGradient>
           </TouchableOpacity>
         </View>
-      {/* <StatusBar style='autoo'></StatusBar> */}
+      <StatusBar style='autoo'></StatusBar>
       </SafeAreaView>
     </LinearGradient>
   );
@@ -43,7 +43,8 @@ const  Current=()=> {
 
 const styles = StyleSheet.create({
   wrapper: {
-    flex: 1,
+    flex: 1, 
+    marginTop: StatusBar.currentHeight || 0
   },
   autoo:{
     backgroundColor:'blue'
